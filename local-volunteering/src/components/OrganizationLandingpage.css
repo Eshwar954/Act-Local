@@ -1,0 +1,32 @@
+/* Full-height flex container with background styling */
+.Background-box {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    padding: 0 20px;
+    background-image: url("./background_gigi.jpeg"); /* Replace with your background image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    color: white; /* Default text color */
+    text-align: center; /* Centers text alignment */
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 4rem; /* Large font size for the main heading */
+    line-height: 1.2; /* Adds slight spacing between lines */
+    font-weight: bold; /* Makes the title stand out */
+    color: white; /* Ensures the text color is white */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); /* Adds a subtle shadow for better contrast */
+    margin: 0;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+  }
+  

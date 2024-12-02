@@ -1,0 +1,209 @@
+/* LandingPage.css */
+
+/* Fullscreen Hero Section */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  transition: filter 2s ease; /* Fade effect for grayscale */
+  margin-top: 100px;
+  
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0); /* Dark overlay for text visibility */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 22%;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: fadeIn 2s ease-out;
+  color: black;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  animation: fadeIn 3s ease-out;
+  color: black;
+}
+
+.hero-btn {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.hero-btn:hover {
+  background-color: #0056b3;
+}
+
+/* About Section Styling */
+.about-section {
+  padding: 50px 0;
+}
+
+.about-section h2 {
+  font-size: 5rem; /* Larger heading size */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333; /* Ensure good contrast */
+}
+
+.about-section p {
+  padding-top: 6%;
+  font-size: 1.25rem; /* Larger paragraph size */
+  line-height: 1.8; /* Better readability */
+  color: #555; /* Softer color for body text */
+}
+
+.about-section img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #2C2C2C; /* Dark background */
+  color: #fff; /* White text */
+  padding: 2rem 1rem; /* Vertical and horizontal padding */
+  text-align: center; /* Center-align text */
+  font-size: 1rem; /* Standard font size */
+  border-top: 1px solid #444; /* Border at the top */
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .section {
+  flex: 1 1 300px;
+  margin: 1rem;
+}
+
+footer .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+footer .heading {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+footer .text {
+  line-height: 1.6;
+}
+
+footer .list {
+  list-style: none;
+  padding: 0;
+}
+
+footer .list-item {
+  margin-bottom: 0.5rem;
+}
+
+footer .link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+footer .link:hover {
+  color: #007bff; /* Hover color for links */
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+footer .icon {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+footer .icon:hover {
+  transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+
+/* Copyright Section */
+footer .copyright {
+  border-top: 1px solid #444;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Marquee Section */
+.marquee {
+  width: 100%; /* Full width of the viewport */
+  overflow: hidden; /* Hide overflowing content */
+  position: absolute; /* Fix the position to the top */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align to the left edge */
+  margin-top: 0; /* Remove any additional margin */
+  background-color: #f4f4f4; /* Optional: Add background color if needed */
+}
+
+.marquee-content {
+  display: flex;
+  animation: scroll-horizontal 120s linear infinite; /* Smooth horizontal scroll */
+}
+
+.marquee-content img {
+  height: 100%; /* Make the image fill the height of the marquee */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fits the marquee nicely */
+  margin-right: 20px; /* Add spacing between images if needed */
+}
+
+/* Scroll Animation */
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-100%); /* Scroll out of view */
+  }
+}
+
+/* Optional: Pause Scroll on Hover */
+.marquee:hover .marquee-content {
+  animation-play-state: paused; /* Pause animation on hover */
+}

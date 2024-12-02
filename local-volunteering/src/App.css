@@ -1,0 +1,23 @@
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure the page takes up full height */
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+  }
+  
+  /* Hero Section should cover the whole screen */
+  .hero {
+    position: relative;
+    background-image: url('Background.jpeg'); /* Replace with your image */
+    background-size: cover;
+    background-position: top center; /* Align the background to the top */
+    height: 100vh; /* Full height of the viewport */
+  }
+  

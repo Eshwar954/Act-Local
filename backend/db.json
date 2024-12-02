@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "Hello",
+      "password": "eshwar",
+      "email": "john@example.com",
+      "phone": "888888888",
+      "profilePic": "https://via.placeholder.com/150",
+      "role": "organization"
+    },
+    {
+      "id": "e316",
+      "username": "hello",
+      "password": "eshwar",
+      "role": "volunteer"
+    },
+    {
+      "id": "ff07",
+      "username": "Dharmatej",
+      "password": "Dharma.123",
+      "role": "volunteer"
+    },
+    {
+      "id": "c4be",
+      "username": "madorg",
+      "password": "madorg",
+      "role": "organization"
+    }
+  ],
+  "posts": [],
+  "requests": [
+    {
+      "title": "Help with event setup",
+      "detailedDescription": "We are organizing a large community event this weekend at the Guntur Community Center. Volunteers are needed to assist with setting up tables, chairs, and decorations, as well as arranging AV equipment and managing the registration desk. Your help is vital to ensure the event runs smoothly.",
+      "organization": "Community Center",
+      "category": "Health",
+      "location": "Guntur",
+      "dueDate": "2024-12-10",
+      "status": "Updated",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Beach cleanup drive",
+      "shortDescription": "Join us for a beach cleanup drive this weekend.",
+      "detailedDescription": "Take part in a collective effort to clean up Guntur's beautiful beaches. This drive aims to remove plastic waste and other trash to protect marine life and improve the environment. Volunteers will be provided with gloves, trash bags, and refreshments. Together, we can make a difference!",
+      "organization": "Beach Volunteers",
+      "status": "Open",
+      "contactPerson": "Jane Smith",
+      "location": "Guntur",
+      "dueDate": "2024-12-10"
+    },
+    {
+      "title": "Plant Trees ",
+      "detailedDescription": "Green Earth Initiative is hosting a tree-planting drive at Central Park, NY, to combat deforestation and improve air quality. Volunteers will help plant saplings, water the plants, and set up awareness boards. Tools and refreshments will be provided. Join us to make the park greener and more vibrant.",
+      "organization": "Green Earth Initiative",
+      "category": "Environment",
+      "location": "Central Park, NY",
+      "dueDate": "2024-12-10",
+      "status": "Updated",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "title": "Blood Donation Camp",
+      "shortDescription": "Set up a blood donation camp.",
+      "detailedDescription": "Health First is organizing a blood donation camp at the Community Center in NY. Volunteers are needed to assist with registrations, guide donors through the process, and manage refreshments. Your support will contribute to saving lives and ensuring the camp runs efficiently.",
+      "organization": "Health First",
+      "status": "Open",
+      "contactPerson": "Sandra Lee",
+      "category": "Health",
+      "location": "Community Center, NY",
+      "dueDate": "2024-12-15"
+    },
+    {
+      "id": "1b0e",
+      "title": "Typhoid Awareness",
+      "detailedDescription": "Spread awareness about typhoid ",
+      "organization": "sravanhealthy foundation",
+      "category": "Health",
+      "location": "Hyderabad",
+      "dueDate": "2024-11-30",
+      "contactPerson": "Sravan Chowdary Kankanala",
+      "email": "sravan_healthy@gmail.com",
+      "status": "Open"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    padding-top: 5%;
+  }
+  
+  /* Container for the entire request list */
+  .request-list-container {
+    width: 100%;
+    max-width: 1600px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background-color: #AAC3D9;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
+  }
+  
+  /* Heading for the list */
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    padding-top: 5%;
+  }
+  
+  /* Grid layout for request items */
+  .request-list-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  /* Individual request box styling */
+  .request-box {
+    background: linear-gradient(145deg, #ffffff, #f1f2f6);
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for request box */
+  .request-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title of each request */
+  .request-box h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  /* Paragraphs for description, organization, and status */
+  .request-box p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .request-box p strong {
+    color: #111;
+  }
+  
+  /* Loading and error message styling */
+  .loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 40px;
+    font-weight: 500;
+  }
+  
+  .loading {
+    color: #6a11cb;
+  }
+  
+  .error {
+    color: #e63946;
+    background-color: #ffe5e8;
+    border: 1px solid #e63946;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Status badges */
+  .request-status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+  }
+  
+  .status-active {
+    background: linear-gradient(90deg, #34d399, #10b981);
+    color: white;
+  }
+  
+  .status-inactive {
+    background: linear-gradient(90deg, #f43f5e, #e11d48);
+    color: white;
+  }
+  
+  .status-pending {
+    background: linear-gradient(90deg, #f59e0b, #d97706);
+    color: white;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .request-list-container {
+      width: 95%;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .request-box h3 {
+      font-size: 1.5rem;
+    }
+  
+    .request-box p {
+      font-size: 1rem;
+    }
+  }
+  

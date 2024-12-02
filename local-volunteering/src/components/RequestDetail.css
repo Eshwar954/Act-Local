@@ -1,0 +1,262 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+
+}
+
+/* Container for the request details page */
+.request-details-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 100px;
+}
+
+/* Hover effect on container */
+.request-details-container:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Details Box */
+.details-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  flex: 0.6;
+  transition: all 0.3s ease;
+}
+
+.details-box h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2e3a59;
+  margin-bottom: 20px;
+}
+
+.details-box p {
+  font-size: 18px;
+  color: #4f5b6d;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.details-box p strong {
+  color: #2e3a59;
+  font-weight: 600;
+}
+
+/* Button Styles */
+.apply-button, .back-button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.apply-button {
+  background-color: #0077cc;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.apply-button:hover {
+  background-color: #005fa3;
+}
+
+.back-button {
+  background-color: #f1f1f1;
+  color: #333;
+  margin-top: 10px;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Map Box */
+.map-box {
+  width: 100%;
+  max-width: 45%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.map-box iframe:hover {
+  transform: scale(1.05);
+}
+
+/* Loading and Error */
+.loading, .error {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Modal (Application Form) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.modal-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h3 {
+  font-size: 26px;
+  color: #2e3a59;
+  margin-bottom: 20px;
+}
+
+.modal-content form label {
+  font-size: 18px;
+  color: #4f5b6d;
+  margin-bottom: 10px;
+}
+
+.modal-content textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.modal-content button {
+  padding: 12px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #005fa3;
+}
+
+.modal-content .close-button {
+  background-color: #e74c3c;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.modal-content .close-button:hover {
+  background-color: #c0392b;
+}
+
+/* Flexbox Layout for Side-by-Side Display */
+.request-details-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.details-box {
+  flex: 0.6;
+}
+
+.map-box {
+  flex: 0.45;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .request-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-box, .map-box {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .map-box iframe {
+    height: 400px;
+  }
+
+  .details-box h2 {
+    font-size: 28px;
+  }
+
+  .details-box p {
+    font-size: 16px;
+  }
+
+  .apply-button, .back-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .details-box h2 {
+    font-size: 24px;
+  }
+
+  .details-box p {
+    font-size: 14px;
+  }
+
+  .apply-button, .back-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .map-box iframe {
+    height: 250px;
+  }
+}
