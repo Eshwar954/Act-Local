@@ -1,40 +1,16 @@
-ActLocal - Local Volunteer Service Application
+# React + Vite
 
-Description:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-ActLocal is a Local Volunteering Network platform designed to bridge the gap between volunteers and organizations. It includes two primary sites:
+Currently, two official plugins are available:
 
-1. Organization Site: Allows organizations to create, update, and delete volunteer opportunities (causes).
-2. Volunteer Site: Enables volunteers to view, explore, and apply for volunteer opportunities posted by organizations.
-The platform features seamless interaction between organizations and volunteers, ensuring an easy and effective way to connect.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Features
-CRUD Operations: 
-1. Organizations can create, update, and delete volunteer opportunities.
-2. Volunteers can browse opportunities and apply to causes.
-   
-User Authentication:
-1. Both organizations and volunteers have login and signup pages.
-   
-Volunteer Interaction:
-1. Volunteers can apply to causes, which redirects them to the organization's homepage for detailed information.
-   
-Responsive Design:
-1. The project is designed with a user-friendly interface for both desktop and mobile views.
+## React Compiler
 
-   
-Technologies Used
-1. Frontend: React.js, HTML, CSS
-2. Backend: JSON Server (fake backend for demonstration)
-3. Design: Canva (for initial project prototype)
+The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-Installation:
+## Expanding the ESLint configuration
 
-1. Clone the repository
-2. Install Dependencies : "npm install"
-3. Run the project : "npm run dev"
-4. Run the backend : using this command "json-server --watch db.json --port 3001"
-
-
-
-Happy Coding!
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
